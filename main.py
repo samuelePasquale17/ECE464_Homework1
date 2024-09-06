@@ -105,9 +105,9 @@ def circuit_parsing(file_name, list_input_node, list_output_node, list_gates):
     f.close()  # close the file
 
 def main():
-    # file_name = "benchmark1.txt"
+    file_name = "benchmark1.txt"
     # file_name = "benchmark2.txt"
-    file_name = "benchmark3.txt"
+    # file_name = "benchmark3.txt"
     list_input_node = []
     list_output_node = []
     list_gates = []
