@@ -61,8 +61,8 @@ def get_input(line):
 def get_output(line):
     """
     get_output is a wrapper that simply calls get_input. This is needed just for user interface purposes. In fact the
-    user can call that function to get the output pin without know what's appening behind the scene. As we know the
-    pattern for both inputs and outputs is almost the same, exept for the word itself (either input or output)
+    user can call that function to get the output pin without know what's happening behind the scene. As we know the
+    pattern for both inputs and outputs is almost the same, except for the word itself (either input or output)
     :param line:
     :return:
     """
@@ -77,7 +77,7 @@ def circuit_parsing(file_name, list_input_node, list_output_node, list_gates):
     :param file_name: name of the file that describes the circuit benchmark
     :param list_input_node: list with all the input nodes
     :param list_output_node: list with all the output nodes
-    :param list_gates: list with all the gates, with their main caracteristics (output pin, gate type, input pins)
+    :param list_gates: list with all the gates, with their main characteristics (output pin, gate type, input pins)
     :return:
     """
 
@@ -128,7 +128,7 @@ def main():
     for gate in list_gates:
         print("Output pin: " + gate[0])
         print("Gate type: " + gate[1])
-        print(f"Inputs del Gate: {', '.join(gate[2])}")
+        print(f"Gate inputs: {', '.join(gate[2])}")
         print("-----------------------------")
 
 
