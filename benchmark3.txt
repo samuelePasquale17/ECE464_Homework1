@@ -1,0 +1,21 @@
+INPUT(p)
+INPUT(q)
+INPUT(r)
+
+p' = NOT(p)
+q' = NOT(q)
+r' = NOT(r)
+
+s = AND(p, q')
+t = AND(p', q, r)
+u = OR(s, t)
+
+v = AND(q, r')
+w = AND(p', r)
+x = OR(v, w)
+
+y = AND(u, x)
+z = OR(u, x)
+
+OUTPUT(y)
+OUTPUT(z)
